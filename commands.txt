@@ -1,0 +1,3 @@
+gcc ebpf_reconstructor.c -o prog libbpf/src/libbpf.a -lelf -lz
+
+clang -target bpf -c out.c -o out.o
